@@ -18,6 +18,7 @@
 		0AD3AE312509BE890001FE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3AE302509BE890001FE1E /* LaunchScreen.storyboard */; };
 		434F670828C85C1300013427 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434F670728C85C1300013427 /* DataSource.swift */; };
 		434F670A28C85FA600013427 /* EmojiCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434F670928C85FA600013427 /* EmojiCollectionViewDelegate.swift */; };
+		434F670C28C862DF00013427 /* EmojiHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434F670B28C862DF00013427 /* EmojiHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0AD3AE302509BE890001FE1E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		434F670728C85C1300013427 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		434F670928C85FA600013427 /* EmojiCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		434F670B28C862DF00013427 /* EmojiHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				434F670928C85FA600013427 /* EmojiCollectionViewDelegate.swift */,
 				0AD3AE2A2509B9580001FE1E /* EmojiCell.swift */,
 				0AD3AE1C2509B8FA0001FE1E /* Main.storyboard */,
+				434F670B28C862DF00013427 /* EmojiHeaderView.swift */,
 				0AD3AE1F2509B8FB0001FE1E /* Assets.xcassets */,
 				0AD3AE302509BE890001FE1E /* LaunchScreen.storyboard */,
 				0AD3AE242509B8FB0001FE1E /* Info.plist */,
@@ -154,6 +157,7 @@
 			files = (
 				434F670828C85C1300013427 /* DataSource.swift in Sources */,
 				0AD3AE2E2509B99D0001FE1E /* Emoji.swift in Sources */,
+				434F670C28C862DF00013427 /* EmojiHeaderView.swift in Sources */,
 				0AD3AE1B2509B8FA0001FE1E /* ViewController.swift in Sources */,
 				0AD3AE172509B8FA0001FE1E /* AppDelegate.swift in Sources */,
 				0AD3AE2F2509B99D0001FE1E /* EmojiDetailController.swift in Sources */,

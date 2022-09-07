@@ -38,4 +38,16 @@ class DataSource: NSObject, UICollectionViewDataSource {
         return emojiCell
     }
     
+    //sections
+    //Kind lets you return a header or a footer
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard let emojiHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: EmojiHeaderView.reuseIdentifier, for: indexPath) as? EmojiHeaderView else {
+            fatalError("Cannot create EmojiHeaderView")
+        }
+        let category = emoji.sections[indexPath.section]
+        
+        emojiHeaderView.textLabel.text = category.rawValue
+        return  emojiHeaderView
+    }
+    
 }
