@@ -12,6 +12,8 @@ class EmojiCollectionViewDelegate: NSObject, UICollectionViewDelegateFlowLayout{
     let numberOfItemsPerRow: CGFloat
     let interItemSpacing: CGFloat
     
+    
+    
     init(numberOfItemsPerRow: CGFloat, interItemSpacing:CGFloat){
         self.numberOfItemsPerRow = numberOfItemsPerRow
         self.interItemSpacing = interItemSpacing
@@ -37,5 +39,13 @@ class EmojiCollectionViewDelegate: NSObject, UICollectionViewDelegateFlowLayout{
             return UIEdgeInsets(top: interItemSpacing/2, left: 0, bottom: interItemSpacing/2, right: 0)
         }
     }
+    
+//    //MARK : -UICollectionViewDelegate-
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        //Called after a selection
+////        print(indexPath)
+//
+//
+//    }
     
 }
