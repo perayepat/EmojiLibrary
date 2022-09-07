@@ -59,4 +59,21 @@ extension DataSource{
         emojiData.append(emoji)
         self.emoji.data.updateValue(emojiData, forKey: category)
     }
+    
+    func deleteEmoji(at indexPath: IndexPath){
+        //using the indexPath to pick the emoji using the section for category
+        let category = emoji.sections[indexPath.section]
+        guard var emojiData = emoji.data[category] else { return }
+        emojiData.remove(at: indexPath.item)
+        
+        //now we need to update the array
+        emoji.data.updateValue(emojiData, forKey: category)
+    }
+    
+    //for multiple index paths to delete several emojis
+    func deleteEmoji(at indexPaths: [IndexPath]){
+        for path in indexPaths{
+            deleteEmoji(at: path)
+        }
+    }
 }
